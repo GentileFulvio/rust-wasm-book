@@ -15,10 +15,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "js-sys"
-version = "0.3.53"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e4bf49d50e2961077d9c99f4b7997d770a1114f087c3c2e0069b36c13fc2979d"
+name = "import_js"
+version = "0.1.0"
 dependencies = [
  "wasm-bindgen",
 ]
@@ -126,21 +124,3 @@ name = "wasm-bindgen-shared"
 version = "0.2.76"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "acdb075a845574a1fa5f09fd77e43f7747599301ea3417a9fbffdeedfc1f4a29"
-
-[[package]]
-name = "web-sys"
-version = "0.3.53"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "224b2f6b67919060055ef1a67807367c2066ed520c3862cc013d26cf893a783c"
-dependencies = [
- "js-sys",
- "wasm-bindgen",
-]
-
-[[package]]
-name = "without-a-bundler"
-version = "0.1.0"
-dependencies = [
- "wasm-bindgen",
- "web-sys",
-]
